@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GrabControls : MonoBehaviour
 {
-
+    /*
     public Transform grabDetect;
     public Transform itemHolder;
     public float rayDist;
@@ -40,9 +40,13 @@ public class GrabControls : MonoBehaviour
             }
             if (holding)
             {
+
+
                 grabcheck.collider.gameObject.transform.parent = itemHolder;
                 grabcheck.collider.gameObject.transform.position = itemHolder.position;
                 grabcheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+               
+
 
                 //grabcheck.collider.gameObject.GetComponent<PolygonCollider2D>().enabled = false;
             }
@@ -56,4 +60,5 @@ public class GrabControls : MonoBehaviour
         }
         
     }
+    */
 }

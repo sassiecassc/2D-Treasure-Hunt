@@ -6,24 +6,27 @@ public class trigger : MonoBehaviour
 {
     private GameMaster gm;
 
-   void Start()
+    void Start()
     {
         gm = GameObject.FindGameObjectWithTag("gamemaster").GetComponent<GameMaster>();
-       
-     
+
+
     }
 
+    /*
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("stuffed animal"))
+        if (collision.CompareTag("stuffed animal"))
         {
             gm.points += 1;
 
         }
     }
+    
 
-    private void OnTriggerStay2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        
+        GrabControls.Drop();
     }
+    */
 }
