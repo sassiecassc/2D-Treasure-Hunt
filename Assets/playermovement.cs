@@ -15,9 +15,6 @@ public class playermovement : MonoBehaviour
     public bool timeIsRunning = false;
 
 
-    public GameObject KitchenNote;
-    public bool noteTrigger;
-
     private void Start()
     {
         //timer is not counting down
@@ -25,17 +22,19 @@ public class playermovement : MonoBehaviour
     
     }
 
-
     void Update()
     {
+        //move code
         moveDirection.x = Input.GetAxisRaw("Horizontal");
         moveDirection.y = Input.GetAxisRaw("Vertical");
 
-        if ((GameObject.Find("crib").GetComponent<GameMaster>().points) == 3)
+        
+        //if player finished first level 
+        if ((GameObject.Find("crib").GetComponent<GameMaster>().points) == 8)
         {
             //timer goes off
             //new music maybe?
-            //transport player to second level
+           
 
             if (teleportimer > 0)
             {
@@ -49,6 +48,7 @@ public class playermovement : MonoBehaviour
                 timeIsRunning = false;
             }
 
+            //transport player to second level
             if (teleportimer == 0)
             {
 
@@ -60,6 +60,11 @@ public class playermovement : MonoBehaviour
             
     }
 
+    //move code
+    private void FixedUpdate()
+    {
+        thisRigidbody2D.MovePosition(thisRigidbody2D.position + moveDirection * speed * Time.deltaTime);
+    }
 
 }
 
