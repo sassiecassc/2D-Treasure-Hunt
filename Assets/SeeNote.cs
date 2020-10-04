@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//purpose: to see a note when passing over
 public class SeeNote : MonoBehaviour
 {
 
