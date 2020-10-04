@@ -13,20 +13,5 @@ public class trigger : MonoBehaviour
 
     }
 
-    /*
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("stuffed animal"))
-        {
-            gm.points += 1;
-
-        }
-    }
-    
-
-    public void OnTriggerEnter2D(Collider2D other)
-    {
-        GrabControls.Drop();
-    }
-    */
+  
 }

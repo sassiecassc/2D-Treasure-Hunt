@@ -7,6 +7,9 @@ TagManager:
   - grab Detect
   - stuffed animal
   - gamemaster
+  - enemyUp
+  - enemySide
+  - note
   layers:
   - Default
   - TransparentFX
